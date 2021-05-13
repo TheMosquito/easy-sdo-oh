@@ -1,5 +1,5 @@
 echo "Cleaning up any previous run..."
-sudo apt purge horizon horizon-cli bluehorizon >/dev/null 2>&1 || :
+sudo apt purge -y horizon horizon-cli bluehorizon >/dev/null 2>&1 || :
 sh -c "cd /var/sdo && docker-compose down" >/dev/null 2>&1 || :
 rm -f ./simulate_mfg.sh
 sudo rm -f /var/sdo/voucher.json
