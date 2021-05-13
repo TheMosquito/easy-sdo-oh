@@ -26,7 +26,11 @@ There is a [YouTube video](coming) you can watch that shows me going through the
 
 ### Pre-Register the Simulated SDO Device (Using its Voucher)
 
-* On any other machine configured with your Open Horizon user credentials. First check your credentials by running `hzn exchange user list`. If that command responds with a JSON structure, you are all set.
+* on any other machine configured with your Open Horizon user credentials. First check your credentials by running `hzn exchange user list`. If that command responds with a JSON structure, you are all set.
+
+* `git clone ...` this repo onto the machine, and `cd` into it.
+
+* save the voucher from the simulated SDO device into this directory using the filename `voucher.json`
 
 * **optionally** (if you wish to customize the example SDO setup provided here) you may edit the `node.policy.json` file to better identify your specific device. In general I recommend providing `properties` that describe the device specifically (e.g., name or serial number), and describe it in terms of its membership in groups of devices (e.g., identifying its specific model, itemizing attached peripherals, and stating what role it will have when deployed, etc.). This is particularly important if you have large numbers of devices, so you can target them using these properties. If you provide a good set of node properties up front, you may never need to change them.
 
