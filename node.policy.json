@@ -1,0 +1,12 @@
+{
+  "properties": [
+    { "name": "Name", "value": "mp9-retail" },
+    { "name": "Model", "value": "HP ProDesk 600 G4 DM PC" },
+    { "name": "Product", "value": "4FZ37UT#ABA" },
+    { "name": "Serial", "value": "MXL913475P" },
+    { "name": "Role", "value": "Shelf Monitor" }
+  ],
+  "constraints": [
+  ]
+}
+
