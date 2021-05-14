@@ -2,7 +2,7 @@
 
 This repo exists to help you try out Secure Device Onboarding (SDO) with Open Horizon
 
-There is a [YouTube video](coming) you can watch that shows me going through these steps.
+There is an accompanying [15 minute YouTube video](https://www.youtube.com/watch?v=dNGv2xVVAvs&list=PLgohd895XSUddtseFy4HxCqTqqlYfW8Ix&index=13) you can watch that shows me going through these steps and providing additional explanation. There is also a [5 minute YouTube video](https://www.youtube.com/watch?v=dNGv2xVVAvs&list=PLgohd895XSUddtseFy4HxCqTqqlYfW8Ix&index=2) that gives an overview of how the SDO feature works in Open Horizon.
 
 ### Assumptions:
 
@@ -14,7 +14,7 @@ There is a [YouTube video](coming) you can watch that shows me going through the
 
 * login to the machine you wish to make into an SDO device (via ssh, or on the machine console, etc.)
 
-* either `git clone ...` this repo onto that machine, or simply copy the `SDO_DEVICE_STEPS` file onto this machine.
+* either `git clone ...` this repo onto that machine, or simply copy the `SDO_DEVICE_STEPS` file onto this machine (as I do in the accompanying video).
 
 * **optionally** you may choose to use a different SDO Rendezvous Server. The example here uses the Intel SDO Rendezvous Server (which will work for you). If you wish, you can change this in the `SDO_DEVICE_STEPS` file. There are more details on this in that file. One option available to all Open Horizon users is to use the SDO Rendezvous Server built into every Open Horizon Management Hub. But again, this is optional. You can use the Intel server.
 
