@@ -30,6 +30,8 @@ source SDO_DEVICE_STEPS
 
 * once you have saved the `voucher.json` file, you can shutdown the device (e.g., `sudo shutdown -h now`). If this was a real SDO device you would now ship it to the customer together with its `voucher.json` file. **To use the SDO feature, you will need to use this voucher to pre-register the machine with Open Horizon.**
 
+* Perhaps it's worth noting that when you use SDO normally, all of the above is done by the SDO device manufacturer for you. You just get the devcie and its voucher and you never need to login to the device yourself.
+
 ### Pre-Register the Simulated SDO Device (Using its Voucher)
 
 * on any other machine configured with your Open Horizon user credentials. First check your credentials by running `hzn exchange user list`. If that command responds with a JSON structure, you are all set.
