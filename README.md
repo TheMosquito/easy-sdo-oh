@@ -1,6 +1,6 @@
 # easy-sdo-oh
 
-This repo exists to help you try out Secure Device Onboarding with Open Horizon
+This repo exists to help you try out Secure Device Onboarding (SDO) with Open Horizon
 
 There is a [YouTube video](coming) you can watch that shows me going through these steps.
 
@@ -16,13 +16,19 @@ There is a [YouTube video](coming) you can watch that shows me going through the
 
 * either `git clone ...` this repo onto that machine, or simply copy the `SDO_DEVICE_STEPS` file onto this machine.
 
-* run the command `source SDO_DEVICE_STEPS` on this machine
+* **optionally** you may choose to use a different SDO Rendezvous Server. The example here uses the Intel SDO Rendezvous Server (which will work for you). If you wish, you can change this in the `SDO_DEVICE_STEPS` file. There are more details on this in that file. One option available to all Open Horizon users is to use the SDO Rendezvous Server built into every Open Horizon Management Hub. But again, this is optional. You can use the Intel server.
 
-* after it has set things up, it will ask you to run a long command involving `simulate-mfg.sh`. Copy that entire long string then paste it and run it. It will take just a few minutes to run.
+* when you are ready, run the command below on this machine:
 
-* copy the "Device UUID" shown near the end of the command output. Alsco copy the `/var/sdo/voucher.json` file to your other machine. To do this using the clipboard, run: `cat /var/sdo/voucher.json; echo` and copy the text that is shown.
+```
+source SDO_DEVICE_STEPS
+```
 
-* once you have saved the UUID and `voucher.json`, shutdown the device (e.g., `sudo shutdown -h now`). If this was a real SDO device you would now ship it to the customer together with its `voucher.json` file.
+* after it has set things up, it will ask you to run a long command involving `simulate-mfg.sh`. Copy that entire long string then paste it and run it. It will take just a few minutes to run (to simulate the process of manufacturing this machine as an SDO device)..
+
+* notice the "Device UUID" shown near the end of the command output, and copy the `/var/sdo/voucher.json` file to your other machine. To do this using the clipboard, run: `cat /var/sdo/voucher.json; echo` and copy the text that is shown (as I do in the accompanying video). Of course, you could instead use `scp` to copy the file from machine to machine.
+
+* once you have saved the `voucher.json` file, you can shutdown the device (e.g., `sudo shutdown -h now`). If this was a real SDO device you would now ship it to the customer together with its `voucher.json` file. **To use the SDO feature, you will need to use this voucher to pre-register the machine with Open Horizon.**
 
 ### Pre-Register the Simulated SDO Device (Using its Voucher)
 
