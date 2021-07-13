@@ -1,6 +1,6 @@
 # easy-sdo-oh
 
-This repo exists to help you try out Secure Device Onboarding (SDO) with Open Horizon
+This project is glue code that I use for Secure Device Onboarding (SDO) with Open Horizon. I wrote this because I have difficulty following the [official Open Horizon documentation for SDO](https://github.com/open-horizon/SDO-support). I hope you will find this helpful too, but if you run into troubles please go to the official documentation and follow the procedures there.it
 
 There is an accompanying [15 minute YouTube video](https://www.youtube.com/watch?v=dNGv2xVVAvs&list=PLgohd895XSUddtseFy4HxCqTqqlYfW8Ix&index=13) you can watch that shows me going through these steps and providing additional explanation. There is also a [5 minute YouTube video](https://www.youtube.com/watch?v=dNGv2xVVAvs&list=PLgohd895XSUddtseFy4HxCqTqqlYfW8Ix&index=2) that gives an overview of how the SDO feature works in Open Horizon.
 
