@@ -38,13 +38,13 @@ source SDO_DEVICE_STEPS
 
 * `git clone ...` this repo onto the machine, and `cd` into it.
 
-* save the voucher from the simulated SDO device into this directory using the filename `voucher.json`
+* place the voucher from the simulated SDO device into this directory using the filename `voucher.json`
 
-* **optionally** (if you wish to customize the example SDO setup provided here) you may edit the `node.policy.json` file to better identify your specific device. In general I recommend providing `properties` that describe the device specifically (e.g., name or serial number), and describe it in terms of its membership in groups of devices (e.g., identifying its specific model, itemizing attached peripherals, and stating what role it will have when deployed, etc.). This is particularly important if you have large numbers of devices, so you can target them using these properties. If you provide a good set of node properties up front, you may never need to change them.
+* **optionally** (if you wish to customize the example SDO setup provided here) you may edit the `node.policy.json` file to better identify your specific device. In general I recomfile mend providing `properties` that describe the device specifically (e.g., name or serial number), and describe it in terms of its membership in groups of devices (e.g., identifying its specific model, itemizing attached peripherals, and stating what role it will have when deployed, etc.). This is particularly important if you have large numbers of devices, so you can target them using these properties. If you provide a good set of node properties up front, you may never need to change them.
 
 * if you chose to edit the `node.policy.json` to have different property values, then you will most likely need to also modify the `deployment.policy.json` file so the `constraints` in the policy will match the `properties` you have set for the node.
 
-* the example here assumes your simulated SDO device has `amd64` architecture. **If your device has a different hardware architecture then you must change the `arch` field to the appropriate Open Horizon architecture name for your device** (e.g., `arm32` or `arm64`) in the `deployment.policy.json` file.
+* the example here assumes your simulated SDO device has `amd64` architecture. **If your device has a different hardware architecture then you must change the `arch` field to the appropriate Open Horizon architecture name for your device** (e.g., `arm` or `arm64`) in the `deployment.policy.json` file.
 
 * **optionally** you may change the service that is referenced in the `deployment.policy.json` file. The example here deploys the `IBM/ibm.helloworld` service. This service is always published automatically in every Open Horizon Management Hub so it is always available for deployment. If you wish to deploy a different service, you must publish that service, and then put its 4-tuple identifier in the `service` section of the `deployment.policy.json` file.
 
