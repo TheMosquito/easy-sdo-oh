@@ -8,7 +8,7 @@ There is an accompanying [15 minute YouTube video](https://www.youtube.com/watch
 
 1. You have a Linux device that you would like to setup as an SDO device (i.e., you wish to simulate the manufacture of an SDO device, like those manufactured by Intel and other vendors).
 
-2. You have **user level** credentials for an Open Horizon Management Hub, and you have `HZN_ORG_ID` and `HZN_EXCHANGE_USER_AUTH` configured appropriately on some machine other than the one where you wish to simulate SDO manufactturing.
+2. You have **user level** credentials for an Open Horizon Management Hub, and you have `HZN_ORG_ID`, `HZN_EXCHANGE_USER_AUTH` and `HZN_SDO_SVC_URL` configured appropriately on some machine other than the one where you wish to simulate SDO manufactturing. You will use this other machine to import the SDO machine's **voucher**. You can get the values for these environment variables from the administrator of your Open Horizon Management Hub.
 
 ### Simulate the SDO Manufacturing Steps On Your Device
 
